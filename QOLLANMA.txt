@@ -1,0 +1,67 @@
+════════════════════════════════════════════════════════════
+  TO'Y TAKLIFNOMASI — QOʻLLANMA
+════════════════════════════════════════════════════════════
+
+PAPKA ICHIDA QANDAY FAYLLAR BO'LISHI KERAK:
+  ✅ index.html        ← Asosiy fayl (bu ni oching)
+  ✅ uslub.css         ← Ko'rinish uslublari
+  ✅ skript.js         ← Barcha sozlamalar shu yerda
+  📁 video.mp4         ← Siz qo'yadigan video (istalgan nom)
+  📁 musiqa.mp3        ← Siz qo'yadigan musiqa (istalgan nom)
+
+────────────────────────────────────────────────────────────
+1. VIDEO QO'SHISH
+────────────────────────────────────────────────────────────
+  • Video faylingizni bu papkaga qo'ying
+  • skript.js faylini oching
+  • Shu qatorni toping va o'zgartiring:
+
+      VIDEO_FAYL: "video.mp4",
+      
+  • O'z faylingiz nomini yozing, masalan:
+  
+      VIDEO_FAYL: "toy_fon.mp4",
+
+  Tavsiya etiladigan video:
+  - Kuyov-kelin juftligi, uzuklar, gul va shunga o'xshash
+  - Format: MP4 (H.264)
+  - Uzunligi: 15-60 soniya (loop bo'ladi)
+
+────────────────────────────────────────────────────────────
+2. MUSIQA QO'SHISH
+────────────────────────────────────────────────────────────
+  • Musiqa faylingizni bu papkaga qo'ying
+  • skript.js faylini oching
+  • Shu qatorni toping va o'zgartiring:
+
+      MUSIQA_FAYL: "musiqa.mp3",
+      
+  • O'z faylingiz nomini yozing, masalan:
+  
+      MUSIQA_FAYL: "wedding_song.mp3",
+
+────────────────────────────────────────────────────────────
+3. ISMLAR VA BOSHQA MA'LUMOTLARNI O'ZGARTIRISH
+────────────────────────────────────────────────────────────
+  skript.js faylini oching va quyidagilarni o'zgartiring:
+
+  KUYOV_ISM:       "Jasurbek"       → Kuyov ismi
+  KELIN_ISM:       "Malika"         → Kelin ismi
+  KUYOV_BOSH:      "J"              → Muqovadagi bosh harf
+  KELIN_BOSH:      "M"              → Muqovadagi bosh harf
+  TOY_SANASI_MATN: "15 Iyun, 2025" → Ko'rsatiladigan sana
+  TOY_VAQTI:       "14:00"          → To'y vaqti
+  TOY_JOYI:        "..."            → To'yxona nomi
+  TOY_MANZILI:     "..."            → To'liq manzil (xarita uchun)
+  TABRIQ:          "..."            → Tabriq matni
+  KIMDAN:          "..."            → Oxirgi yozuv
+
+────────────────────────────────────────────────────────────
+4. ISHLATISH
+────────────────────────────────────────────────────────────
+  • index.html faylini brauzerda oching
+  • Yoki internet serverga yuklang (GitHub Pages, Netlify va h.k.)
+  • Xarita tugmasi → Google Maps'ni ochadi
+  • Musiqa tugmasi → Play/Pauza qiladi
+
+════════════════════════════════════════════════════════════

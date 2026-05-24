@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>To'y Taklifnomasi</title>
+<link rel="stylesheet" href="uslub.css">
+<script src="skript.js" defer></script>
+</head>
+<body>
+
+<div class="kitob">
+
+  <!-- ============================================================
+       1-SAHIFA: MUQOVA
+       ============================================================ -->
+  <div class="sahifa sahifa-1" id="sahifa1">
+
+    <!--
+      🎬 VIDEO FON — MUQOVA
+      skript.js dagi VIDEO_FAYL qiymatidan avtomatik o'rnatiladi
+    -->
+    <video
+      id="muqova-video"
+      class="video-fon"
+      autoplay muted loop playsinline
+      poster=""
+    ></video>
+
+    <!-- Video ustiga qoraytirgich (yozuvlar ajralib tursin) -->
+    <div class="video-overlay"></div>
+
+    <!-- Chegara ramkasi -->
+    <div class="c-top"></div>
+    <div class="c-bot"></div>
+    <div class="c-lft"></div>
+    <div class="c-rgt"></div>
+    <div class="burchak tl"></div>
+    <div class="burchak tr"></div>
+    <div class="burchak bl"></div>
+    <div class="burchak br"></div>
+
+    <!-- Muqova mazmuni -->
+    <div class="muqova-ichki">
+      <p class="salom-matn">Wedding Day</p>
+
+      <div class="bosh-harflar-quti">
+        <span class="bosh-harf" id="kuyov-bosh">J</span>
+        <span class="ampersand">&amp;</span>
+        <span class="bosh-harf" id="kelin-bosh">M</span>
+      </div>
+
+      <div class="oltin-chiziq"></div>
+      <p class="taklifnoma-soz">Taklifnoma</p>
+
+      <button class="ochish-tugma" onclick="sahifaOchish()">
+        Ochish &nbsp;&rsaquo;
+      </button>
+    </div>
+
+  </div><!-- /sahifa-1 -->
+
+  <!-- ============================================================
+       2-SAHIFA: ASOSIY KONTENT
+       ============================================================ -->
+  <div class="sahifa sahifa-2" id="sahifa2">
+
+    <!--
+      🎬 VIDEO FON — 2-SAHIFA
+      Bir xil video ishlatiladi
+    -->
+    <video
+      id="ichki-video"
+      class="video-fon"
+      autoplay muted loop playsinline
+      poster=""
+    ></video>
+
+    <!-- Video overlay -->
+    <div class="video-overlay"></div>
+
+    <!-- Asosiy kontent (video ustida) -->
+    <div class="asosiy-kontent">
+
+      <!-- Salom -->
+      <div class="salom-bolim">
+        <span class="salom-yozuv">Assalomu Alaykum!</span>
+        <div class="salom-chiziq"></div>
+      </div>
+
+      <!-- Oyat -->
+      <div class="oyat-bolim">
+        <p class="oyat-matn">&#8220;Alloh ularning qalblarini sevgi ila birlashtirdi.&#8221;</p>
+        <span class="oyat-manba">(Anfol surasi, 63-oyat)</span>
+      </div>
+
+      <!-- Ismlar + Taklif -->
+      <div class="ismlar-bolim">
+        <p class="taklif-yuqori">Sizni</p>
+        <span class="kuyov-ism" id="kuyov-ism-matn">Jasurbek</span>
+        <span class="ism-ajratgich">va</span>
+        <span class="kelin-ism" id="kelin-ism-matn">Malika</span>
+        <p class="taklif-pastki">ning nikoh to&#699;yiga taklif qilamiz</p>
+      </div>
+
+      <div class="bezak-chiziq"><span class="bezak-belgi">✦</span></div>
+
+      <!-- Tabriq matni -->
+      <div class="tabriq-bolim">
+        <p class="tabriq-matn" id="tabriq-matn-el"></p>
+      </div>
+
+      <div class="bezak-chiziq"><span class="bezak-belgi">✦</span></div>
+
+      <!-- Sana, vaqt, joy -->
+      <div class="malumot-karta">
+        <div class="malumot-qator">
+          <span class="malumot-icon">◈</span>
+          <div>
+            <span class="malumot-sarlavha">Sana</span>
+            <span class="malumot-qiymat" id="toy-sanasi-el"></span>
+          </div>
+        </div>
+        <div class="malumot-qator">
+          <span class="malumot-icon">◈</span>
+          <div>
+            <span class="malumot-sarlavha">Vaqt</span>
+            <span class="malumot-qiymat" id="toy-vaqti-el"></span>
+          </div>
+        </div>
+        <div class="malumot-qator">
+          <span class="malumot-icon">◈</span>
+          <div>
+            <span class="malumot-sarlavha">To'yxona</span>
+            <span class="malumot-qiymat" id="toy-joyi-el"></span>
+            <span class="malumot-kichik" id="toy-manzili-el"></span>
+          </div>
+        </div>
+      </div>
+
+      <!--
+        🎵 MUSIQA  &  🗺️ XARITA — YonMA-YON bir qatorda
+      -->
+      <div class="amallar-qator">
+
+        <!-- Musiqa tugmasi -->
+        <button class="amal-btn" id="musiqa-btn" onclick="musiqaToggle()">
+          <div class="btn-icon" id="play-icon">&#9654;</div>
+          <span id="musiqa-label">Musiqa</span>
+        </button>
+
+        <!-- Xaritada ko'r tugmasi -->
+        <button class="amal-btn" onclick="xaritaOchish()">
+          <div class="btn-icon">
+            <svg viewBox="0 0 24 24" width="11" height="11">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75
+                       7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12
+                       -2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5
+                       2.5S13.38 11.5 12 11.5z"/>
+            </svg>
+          </div>
+          <span>Xaritada ko'rish</span>
+        </button>
+
+      </div>
+
+      <!-- Audio element (ko'rinmaydi) -->
+      <audio id="musiqa-audio" loop></audio>
+
+      <div class="bezak-chiziq"><span class="bezak-belgi">✦</span></div>
+
+      <!-- Taymer -->
+      <div class="taymer-bolim">
+        <p class="taymer-sarlavha">To'yga qadar</p>
+        <div class="taymer-raqamlar">
+          <div class="taymer-birlik">
+            <span class="taymer-son" id="kun">00</span>
+            <span class="taymer-nom">Kun</span>
+          </div>
+          <span class="taymer-nuqta">:</span>
+          <div class="taymer-birlik">
+            <span class="taymer-son" id="soat">00</span>
+            <span class="taymer-nom">Soat</span>
+          </div>
+          <span class="taymer-nuqta">:</span>
+          <div class="taymer-birlik">
+            <span class="taymer-son" id="daqiqa">00</span>
+            <span class="taymer-nom">Daqiqa</span>
+          </div>
+          <span class="taymer-nuqta">:</span>
+          <div class="taymer-birlik">
+            <span class="taymer-son" id="sekund">00</span>
+            <span class="taymer-nom">Sekund</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kimdan -->
+      <div class="kimdan-bolim">
+        <p class="kimdan-matn" id="kimdan-el"></p>
+      </div>
+
+    </div><!-- /asosiy-kontent -->
+  </div><!-- /sahifa-2 -->
+
+</div><!-- /kitob -->
+
+</body>
+</html>
