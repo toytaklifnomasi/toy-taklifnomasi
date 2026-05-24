@@ -28,7 +28,7 @@ const TOY_MALUMOTLARI = {
   // Misol: "https://maps.app.goo.gl/BmuNHZypNFXay5Sr7"
   // yoki:  "https://www.google.com/maps?q=J7F2+WJJ"
   // ================================================================
-  XARITA_LINK: "J7F2+WJJ, Unnamed Road, Guzar, Qashqadaryo Region, Oʻzbekiston",
+  XARITA_LINK: "https://maps.app.goo.gl/c9oZvd6weFCYvZin7",
 
   // ================================================================
   // 🎵 MUSIQA FAYLI — shu qatorni o'zgartiring
